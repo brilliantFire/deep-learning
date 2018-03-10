@@ -66,8 +66,7 @@ K_classes = 10
 px = X_train.shape[1]    # 784 pixels/inputs
 
 convnet1 = Sequential()
- # Input layer is a convolution layer that convolves 32 output filters with 
- # the input
+ # Input layer is a convolution layer with 32 filters
 convnet1.add(Conv2D(32, (5, 5), input_shape=(1, 28, 28), activation='relu'))
 # Take the max over 2x2 pixel units
 convnet1.add(MaxPooling2D(pool_size=(2, 2)))
